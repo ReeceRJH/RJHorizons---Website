@@ -1,0 +1,171 @@
+/* RESET & FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0F0518; /* Deep Space Purple */
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo, .brand {
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: #FF5E3A; /* Your Sunset Orange */
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(15, 5, 24, 0.9); /* Glass effect */
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.cta-btn {
+    background: #FF5E3A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #FF8C00; /* Lighter Orange on hover */
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh; /* Takes up most of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1A0B2E 0%, #240046 100%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.sub-headline {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #B0B0B0;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #FF5E3A, #FF2E63); /* Sunset Gradient Button */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.primary-btn:hover {
+    transform: scale(1.05);
+}
+
+.secondary-btn {
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #0F0518;
+}
+
+/* FEATURES GRID */
+.features {
+    padding: 80px 0;
+    background: #0F0518;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1A0B2E;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #FF5E3A;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 0;
+    background: #08020D;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    color: #FF5E3A;
+    text-decoration: none;
+}
